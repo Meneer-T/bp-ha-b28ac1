@@ -67,12 +67,12 @@ blueprint:
       default: []
       selector:
         action: {}
-  source_url: https://github.com/Meneer-T/bp-ha-b28ac1.git
+  source_url: https://raw.githubusercontent.com/Meneer-T/bp-ha-b28ac1/master/b28ac1.yml
 mode: restart
 max_exceeded: silent
 trigger:
 - platform: event
-  event_type: zha_event
+  event_type: deconz_event
   event_data:
     device_id: !input 'remote'
 action:
